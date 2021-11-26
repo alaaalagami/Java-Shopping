@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdministratorController">
+   <children>
+      <TabPane layoutX="100.0" layoutY="135.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Add System Product">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="NameTextField" layoutX="226.0" layoutY="105.0" />
+                        <Text layoutX="155.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+                        <Text layoutX="158.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category" />
+                        <Text layoutX="155.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max. Price" />
+                        <Text layoutX="156.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Min. Price" />
+                        <Text layoutX="158.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" />
+                        <TextField fx:id="MaxPriceTextField" layoutX="226.0" layoutY="164.0" />
+                        <TextField fx:id="MinPriceTextField" layoutX="226.0" layoutY="135.0" />
+                        <ChoiceBox fx:id="CategoryChoiceBox" layoutX="225.0" layoutY="197.0" prefWidth="150.0" />
+                        <ChoiceBox fx:id="TypeChoiceBox" layoutX="225.0" layoutY="225.0" prefWidth="150.0" />
+                        <Button fx:id="AddSystemProductButton" layoutX="226.0" layoutY="282.0" mnemonicParsing="false" onAction="#addSystemProduct" text="Add System Product" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Adress Online Store Suggestion">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="OnlineAddressSSuggestionButton" layoutX="306.0" layoutY="248.0" mnemonicParsing="false" onAction="#addressOnlineSSuggestion" text="Address" />
+                        <ChoiceBox fx:id="OnlineSSuggestionAction" layoutX="260.0" layoutY="185.0" prefWidth="150.0" />
+                        <ComboBox fx:id="OnlineSSuggestionsComboBox" layoutX="82.0" layoutY="96.0" prefHeight="25.0" prefWidth="471.0" />
+                        <Text layoutX="82.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Online Store Suggestions: " />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Adress Onsite Store Suggestion">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="OnsiteAddressSSuggestionButton" layoutX="286.0" layoutY="202.0" mnemonicParsing="false" onAction="#addressOnsiteSSuggestion" text="Address" />
+                        <ChoiceBox fx:id="OnsiteSSuggestionAction" layoutX="227.0" layoutY="150.0" prefWidth="150.0" />
+                        <Text layoutX="63.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Onsite Store Suggestions: " />
+                        <ComboBox fx:id="OnsiteSSuggestionsComboBox" layoutX="74.0" layoutY="88.0" prefHeight="25.0" prefWidth="456.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Add Brand">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="174.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brand Name" />
+                        <TextField fx:id="BrandNameTextField" layoutX="287.0" layoutY="62.0" />
+                        <Text layoutX="174.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category" />
+                        <ChoiceBox fx:id="BrandCategoryNameChoiceBox" layoutX="286.0" layoutY="117.0" prefWidth="150.0" />
+                        <Button fx:id="AddBrandButton" layoutX="261.0" layoutY="193.0" mnemonicParsing="false" onAction="#addBrand" text="Add Brand" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

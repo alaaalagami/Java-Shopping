@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StoreOwnerController">
+   <children>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Add Product">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="AddOnsiteProductButton" layoutX="412.0" layoutY="292.0" mnemonicParsing="false" onAction="#addOnsiteProduct" text="Add Onsite Product" />
+                        <Text layoutX="41.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+                        <Text layoutX="44.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" />
+                        <Text layoutX="49.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" />
+                        <Text layoutX="44.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agreements" />
+                        <Text layoutX="47.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity" />
+                        <TextField fx:id="ProductNameTextField" layoutX="128.0" layoutY="102.0" />
+                        <TextField fx:id="ProductDescriptionTextField" layoutX="129.0" layoutY="191.0" />
+                        <TextField fx:id="ProductAgreementsTextField" layoutX="129.0" layoutY="244.0" />
+                        <TextField fx:id="ProductQuantityTextField" layoutX="129.0" layoutY="292.0" />
+                        <TextField fx:id="ProductPriceTextField" layoutX="129.0" layoutY="144.0" />
+                        <Text layoutX="291.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Online Store name" />
+                        <Button fx:id="AddOnlineProductButton" layoutX="412.0" layoutY="244.0" mnemonicParsing="false" onAction="#addOnlineProduct" text="Add Online Product" />
+                        <Text layoutX="35.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System Product" />
+                        <Text layoutX="291.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Onsite Store name" />
+                        <Text layoutX="300.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brand" />
+                        <ComboBox fx:id="SystemProductComboBox" layoutX="127.0" layoutY="49.0" prefWidth="150.0" />
+                        <ComboBox fx:id="BrandComboBox" layoutX="412.0" layoutY="53.0" prefWidth="150.0" />
+                        <ComboBox fx:id="OnlineProductStoreComboBox" layoutX="412.0" layoutY="144.0" prefWidth="150.0" />
+                        <ComboBox fx:id="OnsiteProductStoreComboBox" layoutX="412.0" layoutY="191.0" prefWidth="150.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Add Store Suggestion">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="59.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Online Store" />
+                        <Text layoutX="48.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+                        <Text layoutX="47.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store ID " />
+                        <Text layoutX="48.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" />
+                        <TextField fx:id="OnlineStoreNameTextField" layoutX="125.0" layoutY="95.0" />
+                        <TextField fx:id="OnlineStoreIDTextField" layoutX="125.0" layoutY="137.0" />
+                        <TextField fx:id="OnlineStoreTypeTextField" layoutX="125.0" layoutY="189.0" />
+                        <Button fx:id="AddOnlineSSuggestionButton" layoutX="125.0" layoutY="331.0" mnemonicParsing="false" onAction="#addOnlineSSuggestion" text="Add Online Store " />
+                        <Text layoutX="330.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Onsite Store" />
+                        <Text layoutX="319.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+                        <Text layoutX="318.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store ID " />
+                        <Text layoutX="319.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" />
+                        <TextField fx:id="OnsiteStoreNameTextField" layoutX="396.0" layoutY="94.0" />
+                        <TextField fx:id="OnsiteStoreTypeTextField" layoutX="396.0" layoutY="188.0" />
+                        <Button fx:id="AddOnsiteSSuggestionButton" layoutX="395.0" layoutY="331.0" mnemonicParsing="false" onAction="#addOnsiteSSuggestion" text="Add Onsite Store " />
+                        <Text layoutX="322.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
+                        <TextField fx:id="OnsiteStoreAddressTextField" layoutX="396.0" layoutY="235.0" />
+                        <TextField fx:id="OnsiteStoreIDTextField" layoutX="396.0" layoutY="136.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
