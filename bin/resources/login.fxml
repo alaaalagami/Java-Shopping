@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="400.0" prefWidth="542.0" VBox.vgrow="ALWAYS">
+      <children>
+            <TextField fx:id="UsernameTextField" layoutX="274.0" layoutY="113.0" />
+            <PasswordField fx:id="PasswordTextField" layoutX="274.0" layoutY="164.0" />
+            <Text layoutX="190.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+            <Text layoutX="190.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+            <Button fx:id="LoginButton" layoutX="395.0" layoutY="309.0" mnemonicParsing="false" onAction="#login" text="login" />
+            <Button fx:id="RegisterButton" layoutX="481.0" layoutY="309.0" mnemonicParsing="false" onAction="#register" text="signup" />
+            <Text layoutX="190.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" />
+            <ChoiceBox fx:id="TypeChoiceBox" layoutX="273.0" layoutY="71.0" prefWidth="150.0" />
+            <Text fx:id="AddressNoticeLabel" fill="#ff0303" layoutX="432.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You don't have to enter your address to login into an existing account" visible="false" wrappingWidth="201.703857421875" />
+            <TextField fx:id="AddressTextField" layoutX="274.0" layoutY="210.0" visible="false" />
+            <Text fx:id="AddressLabel" layoutX="190.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" visible="false" />
+            <Text fx:id="AddressLabel1" layoutX="200.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" visible="false" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
